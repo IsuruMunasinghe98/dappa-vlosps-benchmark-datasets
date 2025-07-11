@@ -79,15 +79,15 @@ To comprehensively evaluate the proposed framework, both synthetic and real-worl
 
 A large synthetic maze dataset was programmatically generated to provide controlled, reproducible, and diverse grid-based environments for benchmarking. The dataset contains **6,000 maze images**, covering four grid resolutions: \(10 \times 10\), \(30 \times 30\), \(50 \times 50\), and \(100 \times 100\). These mazes are designed to simulate challenging navigation tasks with varying levels of complexity and obstacle density, making them ideal for testing both classical path planning algorithms and the proposed post-processing techniques.
 
-In addition to this custom-generated dataset, the publicly available **Göttingen Maze Dataset** [\[1\]] was used as a benchmark. This dataset is widely adopted in the path planning research community and serves as a standard reference for evaluating maze navigation performance.
+In addition to this custom-generated dataset, the publicly available **Göttingen Maze Dataset** \[1\] was used as a benchmark. This dataset is widely adopted in the path planning research community and serves as a standard reference for evaluating maze navigation performance.
 
 ### Real-World UAV-Derived Datasets
 
 To validate the applicability of the proposed framework in realistic settings, three **publicly available, semantically segmented aerial datasets** were adapted for grid-based path planning experiments. These datasets originate from UAV imagery captured in complex urban and suburban environments:
 
-- **MBRSC Dubai Aerial Dataset** [\[2\]] — high-resolution UAV imagery annotated with semantic labels representing diverse urban features.
-- **ISPRS Urban Semantic Dataset** [\[3\]] — detailed urban scenes with fine-grained semantic annotations.
-- **UAVid Dataset** [\[4\]] — UAV-based dataset focused on street-level and urban scenarios.
+- **MBRSC Dubai Aerial Dataset** \[2\] — high-resolution UAV imagery annotated with semantic labels representing diverse urban features.
+- **ISPRS Urban Semantic Dataset** \[3\] — detailed urban scenes with fine-grained semantic annotations.
+- **UAVid Dataset** \[4\] — UAV-based dataset focused on street-level and urban scenarios.
 
 Since the original datasets were provided as semantic segmentation maps, a preprocessing step was performed to convert them into **binary occupancy grids**. In this conversion, pixels corresponding to navigable (free-space) classes were mapped to `1`, while those representing obstacles or non-traversable areas were mapped to `0`. This binary representation enabled the use of these real-world datasets in grid-based path planning experiments, making the evaluation consistent across both synthetic and real-world scenarios.
 
