@@ -77,7 +77,7 @@ To comprehensively evaluate the proposed framework, both synthetic and real-worl
 
 ### Synthetic Maze Datasets
 
-A large synthetic maze dataset was programmatically generated to provide controlled, reproducible, and diverse grid-based environments for benchmarking. The dataset contains **6,000 maze images**, covering four grid resolutions: 10x10, 30x30, 50x50, and 100x100. These mazes are designed to simulate challenging navigation tasks with varying levels of complexity and obstacle density, making them ideal for testing both classical path planning algorithms and the proposed post-processing techniques.
+A large synthetic maze dataset was generated to provide controlled, reproducible, and diverse grid-based environments for benchmarking. The dataset contains **6,000 maze images**, covering four grid resolutions: 10x10, 30x30, 50x50, and 100x100. These mazes are designed to simulate challenging navigation tasks with varying levels of complexity and obstacle density, making them ideal for testing both classical path planning algorithms and the proposed post-processing techniques.
 
 In addition to this custom-generated dataset, the publicly available **Göttingen Maze Dataset** \[1\] was used as a benchmark. This dataset is widely adopted in the path planning research community and serves as a standard reference for evaluating maze navigation performance.
 
@@ -110,15 +110,15 @@ This section presents the path planning and smoothing results for both **10×10*
 
 ### Dijkstra-Based Paths
 
-| Dijkstra | Simplified (CLOSPO + DAPPA) | After P Controller | Quadratic Bézier | Rational Quadratic Bézier |
-|:--------:|:---------------------------:|:------------------:|:----------------:|:-------------------------:|
-| ![](images/10x10_dijkstra.png) | ![](images/10x10_simplified.png) | ![](images/10x10_p_controller.png) | ![](images/10x10_quadratic_bezier.png) | ![](images/10x10_rational_quadratic_bezier.png) |
+| Dijkstra | + VLoPS | + VLoPS + DAPPA |
+|:--------:|:---------------------------:|:------------------:|
+| ![](images/10x10_dijkstra.png) | ![](images/10x10_simplified.png) | ![](images/10x10_p_controller.png) |
 
 ### A*-Based Paths
 
-| A* | Simplified (CLOSPO + DAPPA) | After P Controller | Quadratic Bézier | Rational Quadratic Bézier |
-|:--------:|:---------------------------:|:------------------:|:----------------:|:-------------------------:|
-| ![](images/10x10_a.png) | ![](images/10x10_a_simplified.png) | ![](images/10x10_a_p_controller.png) | ![](images/10x10_a_quadratic_bezier.png) | ![](images/10x10_a_rational_quadratic_bezier.png) |
+| A* | + VLoPS | + VLoPS + DAPPA |
+|:--------:|:---------------------------:|:------------------:|
+| ![](images/10x10_a.png) | ![](images/10x10_a_simplified.png) | ![](images/10x10_a_p_controller.png) |
 
 ---
 
@@ -126,33 +126,32 @@ This section presents the path planning and smoothing results for both **10×10*
 
 ### Dijkstra-Based Paths
 
-| Dijkstra | Simplified (CLOSPO + DAPPA) | After P Controller | Quadratic Bézier | Rational Quadratic Bézier |
-|:--------:|:---------------------------:|:------------------:|:----------------:|:-------------------------:|
-| ![](images/30x30_dijkstra.png) | ![](images/30x30_simplified.png) | ![](images/30x30_p_controller.png) | ![](images/30x30_quadratic_bezier.png) | ![](images/30x30_rational_quadratic_bezier.png) |
+| Dijkstra | + VLoPS | + VLoPS + DAPPA |
+|:--------:|:---------------------------:|:------------------:|
+| ![](images/30x30_dijkstra.png) | ![](images/30x30_simplified.png) | ![](images/30x30_p_controller.png) |
 
 ### A*-Based Paths
 
-| A* | Simplified (CLOSPO + DAPPA) | After P Controller | Quadratic Bézier | Rational Quadratic Bézier |
-|:--------:|:---------------------------:|:------------------:|:----------------:|:-------------------------:|
-| ![](images/30x30_a.png) | ![](images/30x30_a_simplified.png) | ![](images/30x30_a_p_controller.png) | ![](images/30x30_a_quadratic_bezier.png) | ![](images/30x30_a_rational_quadratic_bezier.png) |
+| A* | + VLoPS | + VLoPS + DAPPA |
+|:--------:|:---------------------------:|:------------------:|
+| ![](images/30x30_a.png) | ![](images/30x30_a_simplified.png) | ![](images/30x30_a_p_controller.png) |
 
 ---
 
-## Robot Traversal Simulation Results
+## 100×100 Grid
 
-This includes Webots simulation of the e-puck robot navigating a 10×10 maze using:
+### Dijkstra-Based Paths
 
-- **Left**: Standard A* algorithm  
-- **Right**: Optimized path using DAPPA + CLOSPO + Bézier smoothing
+| Dijkstra | + VLoPS | + VLoPS + DAPPA |
+|:--------:|:---------------------------:|:------------------:|
+| ![](images/30x30_dijkstra.png) | ![](images/30x30_simplified.png) | ![](images/30x30_p_controller.png) |
 
-<div align="center">
-  <span style="display: inline-block; margin-right: 10px;">
-    <img src="images/videos/A-star.gif" width="40%" />
-  </span>
-  <span style="display: inline-block;">
-    <img src="images/videos/post-processed-A-star.gif" width="40%" />
-  </span>
-</div>
+### A*-Based Paths
+
+| A* | + VLoPS | + VLoPS + DAPPA |
+|:--------:|:---------------------------:|:------------------:|
+| ![](images/30x30_a.png) | ![](images/30x30_a_simplified.png) | ![](images/30x30_a_p_controller.png) |
+
 ---
 
 ## Citation
@@ -162,7 +161,7 @@ If you use this repository in your research or development work, please cite it 
 ```bibtex
 @misc{munasinghe2025dappa,
   author       = {Isuru Munasinghe},
-  title        = {DAPPA-CLOSPO Maze Planning},
+  title        = {DAPPA-VLoPS Maze Planning},
   year         = {2025},
   publisher    = {GitHub},
   howpublished = {\url{https://github.com/IsuruMunasinghe98/dappa-clospo-maze-planning}},
