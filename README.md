@@ -77,7 +77,7 @@ To comprehensively evaluate the proposed framework, both synthetic and real-worl
 
 ### Synthetic Maze Datasets
 
-A large synthetic maze dataset was programmatically generated to provide controlled, reproducible, and diverse grid-based environments for benchmarking. The dataset contains **6,000 maze images**, covering four grid resolutions: \(10 \times 10\), \(30 \times 30\), \(50 \times 50\), and \(100 \times 100\). These mazes are designed to simulate challenging navigation tasks with varying levels of complexity and obstacle density, making them ideal for testing both classical path planning algorithms and the proposed post-processing techniques.
+A large synthetic maze dataset was programmatically generated to provide controlled, reproducible, and diverse grid-based environments for benchmarking. The dataset contains **6,000 maze images**, covering four grid resolutions: 10x10, 30x30, 50x50, and 100x100. These mazes are designed to simulate challenging navigation tasks with varying levels of complexity and obstacle density, making them ideal for testing both classical path planning algorithms and the proposed post-processing techniques.
 
 In addition to this custom-generated dataset, the publicly available **Göttingen Maze Dataset** \[1\] was used as a benchmark. This dataset is widely adopted in the path planning research community and serves as a standard reference for evaluating maze navigation performance.
 
