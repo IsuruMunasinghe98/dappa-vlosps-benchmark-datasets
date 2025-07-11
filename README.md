@@ -94,9 +94,9 @@ Since the original datasets were provided as semantic segmentation maps, a prepr
 ### Dataset References
 
 \[1\] Computational Neuroscience Group, University of Göttingen — Göttingen Maze Dataset: [https://alexandria.physik3.uni-goettingen.de/cns-group/datasets/path_planning/](https://alexandria.physik3.uni-goettingen.de/cns-group/datasets/path_planning/)  
-\[2\] MBRSC Dubai Aerial Dataset: Humans in the Loop — [https://humansintheloop.org/resources/datasets/](https://humansintheloop.org/resources/datasets/)  
-\[3\] ISPRS Urban Semantic Dataset: [https://www2.isprs.org/commissions/comm3/wg4/semantic-labeling/](https://www2.isprs.org/commissions/comm3/wg4/semantic-labeling/)  
-\[4\] UAVid Dataset: [https://uavid.nl](https://uavid.nl)
+\[2\] MBRSC Dubai Aerial Dataset: Humans in the Loop — [https://www.kaggle.com/datasets/humansintheloop/semantic-segmentation-of-aerial-imagery](https://www.kaggle.com/datasets/humansintheloop/semantic-segmentation-of-aerial-imagery/)  
+\[3\] ISPRS Urban Semantic Dataset: [https://www.isprs.org/resources/datasets/benchmarks/UrbanSemLab/default.aspx](https://www.isprs.org/resources/datasets/benchmarks/UrbanSemLab/default.aspx)  
+\[4\] UAVid Dataset: [https://www.kaggle.com/datasets/dasmehdixtr/uavid-v1](https://www.kaggle.com/datasets/dasmehdixtr/uavid-v1)
 
 ---
 
