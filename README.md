@@ -102,7 +102,7 @@ Since the original datasets were provided as semantic segmentation maps, a prepr
 
 # Results Overview
 
-This section presents the path planning and smoothing results for both **10×10**, **30×30** and **100×100** grid environments using different algorithms and techniques.
+This section presents the path planning and smoothing results for both **10×10**, **15×15** and **100×100** grid environments using different algorithms and techniques.
 
 ---
 
@@ -110,31 +110,31 @@ This section presents the path planning and smoothing results for both **10×10*
 
 ### Dijkstra-Based Paths
 
-| Dijkstra | + VLoPS | + VLoPS + DAPPA |
-|:--------:|:---------------------------:|:------------------:|
-| ![](images/10x10_dijkstra.png) | ![](images/10x10_simplified.png) | ![](images/10x10_p_controller.png) |
+| Dijkstra | + VLoPS | + DAPPA | + Bézier Curve Smoothing |
+|:--------:|:---------------------------:|:------------------:|:------------------:|
+| ![](images/10x10_dijkstra.png) | ![](images/10x10_simplified.png) | ![](images/10x10_p_controller.png) | ![](images/10x10_p_controller.png) |
 
 ### A*-Based Paths
 
-| A* | + VLoPS | + VLoPS + DAPPA |
-|:--------:|:---------------------------:|:------------------:|
-| ![](images/10x10_a.png) | ![](images/10x10_a_simplified.png) | ![](images/10x10_a_p_controller.png) |
+| A* | + VLoPS | + DAPPA | + Bézier Curve Smoothing |
+|:--------:|:---------------------------:|:------------------:|:------------------:|
+| ![](images/10x10_a.png) | ![](images/10x10_a_simplified.png) | ![](images/10x10_a_p_controller.png) | ![](images/10x10_p_controller.png) |
 
 ---
 
-## 30×30 Grid
+## 15×15 Grid
 
 ### Dijkstra-Based Paths
 
-| Dijkstra | + VLoPS | + VLoPS + DAPPA |
-|:--------:|:---------------------------:|:------------------:|
-| ![](images/30x30_dijkstra.png) | ![](images/30x30_simplified.png) | ![](images/30x30_p_controller.png) |
+| Dijkstra | + VLoPS | + DAPPA | + Bézier Curve Smoothing |
+|:--------:|:---------------------------:|:------------------:|:------------------:|
+| ![](images/dijkstra/15x15_1.PNG) | ![](images/dijkstra/15x15_2.PNG) | ![](images/dijkstra/15x15_3.PNG) | ![](images/dijkstra/15x15_4.PNG) |
 
 ### A*-Based Paths
 
-| A* | + VLoPS | + VLoPS + DAPPA |
-|:--------:|:---------------------------:|:------------------:|
-| ![](images/30x30_a.png) | ![](images/30x30_a_simplified.png) | ![](images/30x30_a_p_controller.png) |
+| A* | + VLoPS | + DAPPA | + Bézier Curve Smoothing |
+|:--------:|:---------------------------:|:------------------:|:------------------:|
+| ![](images/a-star/15x15_1.PNG) | ![](images/a-star/15x15_2.PNG) | ![](images/a-star/15x15_3.PNG) | ![](images/a-star/15x15_4.PNG) |
 
 ---
 
@@ -142,15 +142,15 @@ This section presents the path planning and smoothing results for both **10×10*
 
 ### Dijkstra-Based Paths
 
-| Dijkstra | + VLoPS | + VLoPS + DAPPA |
-|:--------:|:---------------------------:|:------------------:|
-| ![](images/30x30_dijkstra.png) | ![](images/30x30_simplified.png) | ![](images/30x30_p_controller.png) |
+| Dijkstra | + VLoPS | + DAPPA | + Bézier Curve Smoothing |
+|:--------:|:---------------------------:|:------------------:|:------------------:|
+| ![](images/30x30_dijkstra.png) | ![](images/30x30_simplified.png) | ![](images/30x30_p_controller.png) | ![](images/10x10_p_controller.png) |
 
 ### A*-Based Paths
 
-| A* | + VLoPS | + VLoPS + DAPPA |
-|:--------:|:---------------------------:|:------------------:|
-| ![](images/30x30_a.png) | ![](images/30x30_a_simplified.png) | ![](images/30x30_a_p_controller.png) |
+| A* | + VLoPS | + DAPPA | + Bézier Curve Smoothing |
+|:--------:|:---------------------------:|:------------------:|:------------------:|
+| ![](images/30x30_a.png) | ![](images/30x30_a_simplified.png) | ![](images/30x30_a_p_controller.png) | ![](images/10x10_p_controller.png) |
 
 ---
 
