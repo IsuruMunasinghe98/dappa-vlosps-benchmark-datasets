@@ -71,6 +71,35 @@ Refine the path by reducing unnecessary directional changes and eliminating redu
 
 ---
 
+## Dataset Preparation and Modification
+
+To comprehensively evaluate the proposed framework, both synthetic and real-world datasets were prepared and modified as detailed below. These datasets ensure that the evaluation captures both controlled experimental settings and realistic navigation scenarios derived from UAV imagery.
+
+### Synthetic Maze Datasets
+
+A large synthetic maze dataset was programmatically generated to provide controlled, reproducible, and diverse grid-based environments for benchmarking. The dataset contains **6,000 maze images**, covering four grid resolutions: \(10 \times 10\), \(30 \times 30\), \(50 \times 50\), and \(100 \times 100\). These mazes are designed to simulate challenging navigation tasks with varying levels of complexity and obstacle density, making them ideal for testing both classical path planning algorithms and the proposed post-processing techniques.
+
+In addition to this custom-generated dataset, the publicly available **Göttingen Maze Dataset** [\[1\]] was used as a benchmark. This dataset is widely adopted in the path planning research community and serves as a standard reference for evaluating maze navigation performance.
+
+### Real-World UAV-Derived Datasets
+
+To validate the applicability of the proposed framework in realistic settings, three **publicly available, semantically segmented aerial datasets** were adapted for grid-based path planning experiments. These datasets originate from UAV imagery captured in complex urban and suburban environments:
+
+- **MBRSC Dubai Aerial Dataset** [\[2\]] — high-resolution UAV imagery annotated with semantic labels representing diverse urban features.
+- **ISPRS Urban Semantic Dataset** [\[3\]] — detailed urban scenes with fine-grained semantic annotations.
+- **UAVid Dataset** [\[4\]] — UAV-based dataset focused on street-level and urban scenarios.
+
+Since the original datasets were provided as semantic segmentation maps, a preprocessing step was performed to convert them into **binary occupancy grids**. In this conversion, pixels corresponding to navigable (free-space) classes were mapped to `1`, while those representing obstacles or non-traversable areas were mapped to `0`. This binary representation enabled the use of these real-world datasets in grid-based path planning experiments, making the evaluation consistent across both synthetic and real-world scenarios.
+
+### Dataset References
+
+\[1\] Computational Neuroscience Group, University of Göttingen — Göttingen Maze Dataset: [https://alexandria.physik3.uni-goettingen.de/cns-group/datasets/path_planning/](https://alexandria.physik3.uni-goettingen.de/cns-group/datasets/path_planning/)  
+\[2\] MBRSC Dubai Aerial Dataset: Humans in the Loop — [https://humansintheloop.org/resources/datasets/](https://humansintheloop.org/resources/datasets/)  
+\[3\] ISPRS Urban Semantic Dataset: [https://www2.isprs.org/commissions/comm3/wg4/semantic-labeling/](https://www2.isprs.org/commissions/comm3/wg4/semantic-labeling/)  
+\[4\] UAVid Dataset: [https://uavid.nl](https://uavid.nl)
+
+---
+
 # Results Overview
 
 This section presents the path planning and smoothing results for both **10×10** and **30×30** grid environments using different algorithms and techniques.
