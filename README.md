@@ -102,7 +102,7 @@ Since the original datasets were provided as semantic segmentation maps, a prepr
 
 # Results Overview
 
-This section presents the path planning and smoothing results for both **10×10** and **30×30** grid environments using different algorithms and techniques.
+This section presents the path planning and smoothing results for both **10×10**, **30×30** and **100×100** grid environments using different algorithms and techniques.
 
 ---
 
@@ -164,6 +164,6 @@ If you use this repository in your research or development work, please cite it 
   title        = {DAPPA-VLoPS Maze Planning},
   year         = {2025},
   publisher    = {GitHub},
-  howpublished = {\url{https://github.com/IsuruMunasinghe98/dappa-clospo-maze-planning}},
-  note         = {Accessed: 2025-04-30}
+  howpublished = {\url{https://github.com/IsuruMunasinghe98/dappa-vlops-benchmark-datasets}},
+  note         = {Accessed: 2025-06-20}
 }
