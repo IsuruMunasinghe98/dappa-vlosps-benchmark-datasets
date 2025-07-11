@@ -112,13 +112,13 @@ This section presents the path planning and smoothing results for both **10×10*
 
 | Dijkstra | + VLoPS | + DAPPA | + Bézier Curve Smoothing |
 |:--------:|:---------------------------:|:------------------:|:------------------:|
-| ![](images/10x10_dijkstra.png) | ![](images/10x10_simplified.png) | ![](images/10x10_p_controller.png) | ![](images/10x10_p_controller.png) |
+| ![](images/dijkstra/10x10_1.PNG) | ![](images/dijkstra/10x10_2.PNG) | ![](images/dijkstra/10x10_3.PNG) | ![](images/dijkstra/10x10_4.PNG) |
 
 ### A*-Based Paths
 
 | A* | + VLoPS | + DAPPA | + Bézier Curve Smoothing |
 |:--------:|:---------------------------:|:------------------:|:------------------:|
-| ![](images/10x10_a.png) | ![](images/10x10_a_simplified.png) | ![](images/10x10_a_p_controller.png) | ![](images/10x10_p_controller.png) |
+| ![](images/a-star/10x10_1.PNG) | ![](images/a-star/10x10_2.PNG) | ![](images/a-star/10x10_3.PNG) | ![](images/a-star/10x10_4.PNG) |
 
 ---
 
@@ -144,13 +144,13 @@ This section presents the path planning and smoothing results for both **10×10*
 
 | Dijkstra | + VLoPS | + DAPPA | + Bézier Curve Smoothing |
 |:--------:|:---------------------------:|:------------------:|:------------------:|
-| ![](images/30x30_dijkstra.png) | ![](images/30x30_simplified.png) | ![](images/30x30_p_controller.png) | ![](images/10x10_p_controller.png) |
+| ![](images/dijkstra/100x100_1.PNG) | ![](images/dijkstra/100x100_2.PNG) | ![](images/dijkstra/100x100_3.PNG) | ![](images/dijkstra/100x100_4.PNG) |
 
 ### A*-Based Paths
 
 | A* | + VLoPS | + DAPPA | + Bézier Curve Smoothing |
 |:--------:|:---------------------------:|:------------------:|:------------------:|
-| ![](images/30x30_a.png) | ![](images/30x30_a_simplified.png) | ![](images/30x30_a_p_controller.png) | ![](images/10x10_p_controller.png) |
+| ![](images/a-star/100x100_1.PNG) | ![](images/a-star/100x100_2.PNG) | ![](images/a-star/100x100_3.PNG) | ![](images/a-star/100x100_4.PNG) |
 
 ---
 
