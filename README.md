@@ -1,3 +1,5 @@
+⚠️ **Note:** The paper associated with this work is currently under review. The complete codebase, which implements the DAPPA and VLoPS algorithms, the trajectory smoothing techniques, as well as the newly developed datasets, will be made publicly available upon acceptance of the paper for publication.
+
 # dappa-vlops-maze-planning
 
 This repository presents a post-processing framework combining the Direction-Aware Path Planning Approach (DAPPA) and Visibility and Line-of-Sight Path Simplification (VLoPS) for UAV-assisted UGV path planning in grid-based environments.
